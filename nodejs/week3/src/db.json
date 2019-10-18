@@ -1,0 +1,19 @@
+{
+  "todos": [
+    {
+      "id": "dZLJfA347dNhX2lXAyyh-",
+      "task": "write a book",
+      "done": false
+    },
+    {
+      "id": "x8wT5j9sTDJ5w9gOoQqdL",
+      "task": "go to bed",
+      "done": true
+    },
+    {
+      "id": "L3bzEefciWKruMMktsqUL",
+      "task": "go home",
+      "done": false
+    }
+  ]
+}

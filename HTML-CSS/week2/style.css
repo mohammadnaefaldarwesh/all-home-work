@@ -1,0 +1,158 @@
+/* I give  the grid-floats a hight because i did not find another way to get the boxes even.*/
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    max-width: 1000px;
+    min-width: 319px;
+    margin: 50px auto;
+    background-color: rgb(207, 207, 207);
+    animation: appear-main 5s;
+}
+@keyframes appear-main {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+ul { list-style: none;}
+h1, h2, h3 {text-align: center;}
+h2 {clear: both;}
+h3 {
+    box-shadow: 0 0 5px rgb(0, 0, 0);
+    border-radius: 5px;
+}
+#grid-floats li {
+    float: left;
+    height: 74vw; 
+    min-height: 288px;
+}
+.grid-item {
+    box-sizing: border-box;
+    width: calc(50% - 10px);
+    box-shadow: 0 0 5px rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px;
+    font-size: 3vw;
+    text-align: justify;
+}
+img {
+    width: 100%;
+    padding-top: 5px;
+    background: url("images/new\ product.png");
+    background-size: 50px;
+    background-repeat: no-repeat;
+    background-position: right bottom ;
+    background-position-y: 75%;
+}
+#grid-floats li:nth-child(n+1):nth-child(even):nth-child(-n+7),
+#grid-flex li:nth-child(n+1):nth-child(even):nth-child(-n+7),
+#grid-floats li:nth-child(n+8):nth-child(odd):nth-child(-n+14),
+#grid-flex li:nth-child(n+8):nth-child(odd):nth-child(-n+14){
+    animation: new-product 2s infinite;
+}
+@keyframes new-product {
+    0% {
+        filter:  saturate(0);
+      }   
+    50% {
+        filter:  saturate(1);
+      }
+    100% {
+        filter:  saturate(0);
+      }
+}
+#grid-floats li:hover, #grid-flex li:hover {
+    transition-duration: 350ms;
+    box-shadow:0 0 50px rgb(0, 0, 0); 
+    transform: matrix3d(1,0,0.00,0,0.00,1,0.00,0,0,0,1,0,0,5,0,1);
+} 
+#grid-floats li:nth-child(1) {
+    width: calc(100% - 10px);
+    height: 88vw;    
+}
+#grid-flex li:nth-child(1){
+    width: calc(100% - 10px);
+}
+
+#grid-flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+#grid-floats li:nth-child(n+8):nth-child(-n+9)::before,
+#grid-flex li:nth-child(n+8):nth-child(-n+9)::before,
+#grid-floats li:nth-child(-n+2)::before, 
+#grid-flex li:nth-child(-n+2)::before {
+    content: "⭐⭐";
+} 
+#grid-floats li:nth-child(+n+6):nth-child(-n+7)::before,
+#grid-flex li:nth-child(+n+6):nth-child(-n+7)::before,
+#grid-floats li:nth-child(+n+13):nth-child(-n+14)::before,
+#grid-flex li:nth-child(+n+13):nth-child(-n+14)::before{
+    content: "⭐⭐⭐";
+} 
+#grid-floats li:nth-child(4)::before,
+#grid-flex li:nth-child(4)::before,
+#grid-floats li:nth-child(11)::before,
+#grid-flex li:nth-child(11)::before {
+    content: "⭐⭐⭐⭐";
+} 
+#grid-floats li:nth-child(n+3):nth-child(odd):nth-child(-n+5)::before,
+#grid-flex li:nth-child(n+3):nth-child(odd):nth-child(-n+5)::before,
+#grid-floats li:nth-child(n+10):nth-child(even):nth-child(-n+12)::before,
+#grid-flex li:nth-child(n+10):nth-child(even):nth-child(-n+12)::before {
+    content: "⭐⭐⭐⭐⭐";
+} 
+#grid-floats li:nth-child(n+1)::before,
+#grid-flex li:nth-child(n+1)::before{
+    font-size: 14px;
+    text-shadow: 0 0 10px rgb(253, 240, 60);
+    display: block;
+    position: relative;
+    margin-top: -10px;
+}
+@media screen and (min-width:575px){
+    #grid-floats li {
+        height: 62vw; 
+    }
+    .grid-item {
+        font-size: 2.5vw;
+        width: calc(100% / 3 - 10px);
+    }
+    #grid-floats li:nth-child(-n+2){
+        width: calc(50% - 10px);
+        height: 55vw;    
+    }
+    #grid-flex li:nth-child(-n+2){
+        width: calc(50% - 10px); 
+    }
+}
+@media screen and (min-width:900px){
+    #grid-floats li:nth-child(n+1) {
+        height: 470px;
+        font-size: 18px; 
+        max-width: 490px;   
+    }
+    #grid-flex li:nth-child(n+1) {
+        font-size: 18px; 
+        max-width: 490px;
+    }
+    #grid-floats li:nth-child(n+2), #grid-flex li:nth-child(n+2){
+        width: calc(100% / 4 - 10px); 
+        max-width: 240px;  
+    }
+}
+@media screen and (max-width:394px){
+    .grid-item {
+        font-size: 11px;
+    }
+    #grid-floats li:nth-child(1){
+        min-height: 347px; 
+    }
+} 
+
+
+
+
+
