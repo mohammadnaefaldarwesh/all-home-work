@@ -1,7 +1,10 @@
+* {
+  padding: 0;
+  margin: 0;
+}
 #header {
-  font-size: 50px;
+  font-size: 100px;
   font-family: fantasy;
-  /*margin-left: 350px;*/
   text-align: center;
 }
 .opacity {
@@ -52,95 +55,78 @@
   text-shadow: 0 0 50px rgb(200, 0, 100);
 }
 body {
-  background-image: url(https://avatanplus.com/files/resources/original/58f78c8d5a5b815b86fd083a.jpg);
-  max-width: 100%;
-}
-h1 {
   background-color: black;
-  /*   position: fixed; */
-  margin: 10px;
-  background: linear-gradient(white, black, white);
-  min-width: 1285;
+  min-width: 400px;
 }
+
 .bar {
-  margin: 30px;
-  font-size: 20px;
+  font-size: 30px;
   background-color: black;
   color: rgb(202, 204, 204);
   border-style: groove;
   border-width: 5px;
   border-color: rgb(202, 204, 204);
   border-radius: 10px;
-  transform: translate(-50%, -50%);
   background: linear-gradient(red, black, red);
-  min-width: 1285;
 }
 .box {
-  width: 1285px;
-  min-width: 1285;
-  height: 75px;
+  width: 100%;
+  /* height: 150px; */
   background-color: black;
   opacity: 0.9;
   background: linear-gradient(black, white, black);
 }
+
+.menu {
+  margin-top: 20px;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  background-color: black;
+  background: linear-gradient(white, black, white);
+}
 h2 {
   color: black;
   font-size: 50px;
-  margin-top: 200px;
-  width: 1255px;
+  text-align: center;
+  margin-top: 20px;
+  width: 100%;
   background: linear-gradient(black, white, black);
   box-shadow: 0 0 10px red;
 }
 .pnews {
   background-color: black;
   color: white;
-  font-size: 30px;
-}
-#div {
-  position: fixed;
-  margin: -30px;
-}
-.image {
-  width: 300px;
-  float: left;
+  font-size: 25px;
+  width: 70%;
+  padding-left: 10px;
+  padding-top: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
+.image {
+  width: 30%;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.news-box {
+  display: flex;
+  background-color: black;
+  justify-content: space-around;
+  align-items: center;
+}
 .boxnews {
   border-style: groove;
   border-color: black;
-  box-shadow: 0px 0 90px red;
+  box-shadow: 0px 0 15px red;
   border-width: 15px;
   border-radius: 20px;
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
-h3 {
-  color: black;
-  font-size: 50px;
-  width: 1253px;
-  background: linear-gradient(black, white, black);
-  margin-top: 2.5px;
-  box-shadow: 0 0 90px red;
-}
-.article_image {
-  width: 400px;
-  float: left;
-  border-style: groove;
-  border-radius: 20px;
-  border-width: 9px;
-  border-color: black;
-  margin: 0px 2px 2px 0px;
-}
-.boxarticle {
-  border-style: groove;
-  border-color: black;
-  border-width: 13px;
-  border-radius: 20px;
-  float: right;
-  width: 800px;
-  color: white;
-  background-color: black;
-  font-size: 30;
-  box-shadow: 0 0 50px red;
-}
+
 .justify {
   text-align: justify;
   text-indent: 10px;
@@ -149,121 +135,84 @@ h3 {
   font-size: 40px;
   font-weight: 30;
 }
-.boxarticle2 {
-  border-style: groove;
-  border-color: black;
-  border-width: 13px;
-  border-radius: 20px;
-  color: white;
-  fontsize: 10px;
-  float: top;
-  margin: 0px 850px 0px 0px;
-  background-color: black;
-  box-shadow: 0 0 40px red;
+
+.games-div {
+  width: 100%;
+  margin-top: 20px;
 }
-.particle3 {
-  border-style: groove;
-  border-color: black;
-  border-width: 13px;
-  border-radius: 20px;
-  width: 64%;
-  color: white;
-  fontsize: 20px;
-  float: right;
-  background-color: black;
-  padding-top: 5px;
-  box-shadow: 0 0 50px red;
-}
-.articleimg3 {
-  width: 300px;
-  float: left;
-  border-style: groove;
-  border-color: black;
-  border-width: 13px;
-  border-radius: 20px;
-  morgin-top: 0px;
-}
-h4 {
-  color: black;
-  font-size: 50px;
-  width: 1253px;
-  background: linear-gradient(black, white, black);
-  margin-top: 100px;
-  box-shadow: 0 0 20px red;
-}
-.block {
-  display: block;
-}
+
 .games {
-  margin: -30px 400px 20px 400px;
+  list-style: none;
+  width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto;
   background-color: black;
-  box-shadow: 0 0 50px red;
+  box-shadow: 0 0 30px red;
   border-radius: 20px;
+}
+.games-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .ligames {
-  margin-left: 60px;
+  width: calc(100% / 3 - 40px);
 }
 .bordergames {
-  border-style: groove;
-  border-width: 10px;
-  border-color: black;
-  background-color: black;
+  padding: 20px;
 }
-h5 {
-  color: black;
-  font-size: 50px;
-  width: 1253px;
-  background: linear-gradient(black, white, black);
-  margin-top: 2.5px;
-  box-shadow: 0 0 20px red;
+.games-text {
+  margin-top: 5px;
 }
 .sites {
   color: white;
   font-size: 25px;
   background-color: black;
-  box-shadow: 0 0 90px red;
+  box-shadow: 0 0 30px red;
   border-width: 10px;
   border-style: groove;
   border-color: black;
   border-radius: 30px;
-  margin-left: 0px;
-  margin-right: 10px;
+  margin: 20px 10px;
+}
+.sites-list {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
 }
 .li {
-  margin-left: 200px;
+  width: calc(100% / 2 - 40px);
 }
-h6 {
-  color: black;
-  font-size: 50px;
-  width: 1253px;
-  background: linear-gradient(black, white, black);
-  margin-top: 60px;
-  box-shadow: 0 0 20px red;
+.footer {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
 }
 .about {
+  width: 60%;
   color: white;
   font-size: 30px;
-  float: left;
   background: black;
-  border-style: groove;
-  border-color: black;
-  border-width: 10px;
   border-radius: 20px;
-  margin-top: -50px;
-  box-shadow: 0 0 90px red;
+  box-shadow: 0 0 30px red;
+  padding: 10px;
 }
 .contact {
-  font-size: 30px;
+  list-style: none;
+  width: 35%;
+  font-size: 25px;
   color: white;
-  border-style: groove;
-  border-width: 10px;
-  border-color: black;
   border-radius: 20px;
   background: black;
-  float: right;
-  margin-right: 120px;
-  margin-top: -50px;
-  box-shadow: 0 0 90px red;
+  box-shadow: 0 0 30px red;
+}
+.contact li {
+  padding: 10px;
 }
 .licontact {
   margin-top: 20px;
@@ -287,38 +236,38 @@ h6 {
   transition-duration: 350ms;
   box-shadow: 0 0 20px rgb(200, 6, 4);
 }
-h1 a:link {
+a:link {
   color: rgb(202, 204, 204);
   text-decoration: none;
 }
-h1 a:active {
+a:active {
   color: rgb(202, 204, 204);
   text-decoration: none;
 }
-h1 a:visited {
+a:visited {
   color: rgb(202, 204, 204);
   text-decoration: none;
 }
-h1 a:hover {
+.menu a:hover {
   color: rgb(214, 7, 7);
   background-color: rgba(255, 255, 255, 0.8);
   text-decoration: none;
   transition-duration: 350ms;
   box-shadow: 0 0 40px rgb(214, 7, 7), 0 0 40px rgb(214, 7, 7);
 }
-.pnews a:link {
+.boxnews a:link {
   color: rgb(202, 204, 204);
   text-decoration: none;
 }
-.pnews a:active {
+.boxnews a:active {
   color: rgb(202, 204, 204);
   text-decoration: none;
 }
-.pnews a:visited {
+.boxnews a:visited {
   color: rgb(202, 204, 204);
   text-decoration: none;
 }
-.pnews a:hover {
+.boxnews p:hover {
   color: rgb(118, 3, 156);
   transition-duration: 350ms;
   text-decoration: none;
@@ -346,39 +295,63 @@ h1 a:hover {
   margin: 0px 5px 0px 5px;
 }
 
-.center {
-  margin-left: 550px;
-}
-html {
-  display: block;
-  max-width: 100%;
-}
-body {
-  display: block;
-  align-items: center;
-  min-width: 1255px;
-  max-width: 1285px;
-  padding: 0% 10% 0% 20%;
-}
-
 .gif {
-  width: 1253px;
+  width: 100%;
   height: 100px;
   opacity: 0.8;
   display: block;
+  margin-top: 20px;
 }
-.end {
-  display: block;
-  opacity: 0;
-  margin-top: 300px;
+@media screen and (max-width: 790px) {
+  #header {
+    font-size: 70px;
+  }
+  .bar {
+    font-size: 25px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+  .pnews {
+    font-size: 20px;
+  }
+  .sites {
+    font-size: 17px;
+  }
+  .games-text {
+    font-size: 13px;
+  }
+  .about {
+    font-size: 20px;
+  }
+  .contact {
+    font-size: 15px;
+  }
 }
-/*@media (min-width:1245px){
-  body {padding:0 10% 0 0 ;
-  min-width:1255px;}
-}*/
-@media (max-width: 1400px) {
-  body {
-    padding: 0 0 0 0;
-    min-width: 1255px;
+
+@media screen and (max-width: 560px) {
+  #header {
+    font-size: 40px;
+  }
+  .bar {
+    font-size: 20px;
+  }
+  h2 {
+    font-size: 25px;
+  }
+  .pnews {
+    font-size: 15px;
+  }
+  .li {
+    width: 51%;
+  }
+  .sites {
+    font-size: 15px;
+  }
+  .about {
+    font-size: 14px;
+  }
+  .contact {
+    font-size: 10px;
   }
 }
